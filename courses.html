@@ -11,24 +11,40 @@
   <div class="relative min-h-screen">
 
     <!--inicio nav bar -->
-    <nav class="bg-[#250e28] shadow-lg shadow-[#250e28]/50 px-6 py-8 flex flex-wrap justify-between items-center">
-      <a href="index.html" class="font-serif text-[#FEFEFE] text-3xl sm:text-3xl md:text-4xl">Michelle</a>
-      <ul class="flex flex-col sm:flex-row sm:space-x-10 md:space-x-20 text-[#FEFEFE] text-3xl sm:text-xl md:text-3xl font-serif mt-4 sm:mt-0">
-        <li><a href="about_me.html" class="hover:text-violet-300">About me</a></li>
-        <li class="relative group z-50">
-      <!-- inicio menu desplegable -->
-          <a class="hover:text-violet-300 cursor-pointer">Imprint</a>
-          <ul class="absolute hidden group-hover:block bg-[#250e28] w-40 sm:w-48 mt-2 rounded-md text-base sm:text-lg md:text-xl text-[#FEFEFE] font-serif">
-            <li><a href="proyects.html" class="block px-4 py-2 hover:text-violet-300">Proyects</a></li>
-            <li><a href="courses.html" class="block px-4 py-2 hover:text-violet-300">Courses</a></li>
-            <li><a href="volunteer.html" class="block px-4 py-2 hover:text-violet-300">Volunteer</a></li>
-          </ul>
-        </li>
-      <!-- fin menú desplegable -->
-        <li><a href="contacts.html" class="hover:text-violet-300">Contact</a></li>
-      </ul>
-    </nav>
-    <!--fin nav bar -->
+      <nav class="bg-[#250e28] shadow-lg shadow-[#250e28]/50 px-6 py-8 flex flex-wrap justify-between items-center">
+        <a href="index.html" class="font-serif text-[#FEFEFE] text-3xl sm:text-3xl md:text-4xl">Michelle</a>
+        <ul class="flex flex-col sm:flex-row sm:space-x-10 md:space-x-20 text-[#FEFEFE] text-3xl sm:text-xl md:text-3xl font-serif mt-4 sm:mt-0">
+          <li><a href="about_me.html" class="hover:text-violet-300">About me</a></li>
+
+      <!--menu desplegable -->
+      <li class="relative z-50">
+        <a id="boton" class="hover:text-violet-300 cursor-pointer">Imprint</a>
+        <ul id="menu" class="absolute hidden bg-[#250e28] w-40 sm:w-48 mt-2 rounded-md text-base sm:text-lg md:text-xl text-[#FEFEFE] font-serif">
+          <li><a href="proyects.html" class="block px-4 py-2 hover:text-violet-300">Proyects</a></li>
+          <li><a href="courses.html" class="block px-4 py-2 hover:text-violet-300">Courses</a></li>
+          <li><a href="volunteer.html" class="block px-4 py-2 hover:text-violet-300">Volunteer</a></li>
+        </ul>
+      </li>
+      <li><a href="contacts.html" class="hover:text-violet-300">Contact</a></li>
+        </ul>
+      </nav>
+      <!--fin nav bar -->
+
+      <script>
+        const btn = document.getElementById("boton");
+        const menu = document.getElementById("menu");
+
+        btn.addEventListener("click", (event) => {
+        event.stopPropagation(); 
+        menu.classList.toggle("hidden");
+        });
+
+        document.addEventListener("click", (event) => {
+        if (!menu.contains(event.target) && !btn.contains(event.target)) {
+        menu.classList.add("hidden");
+        }
+        });
+    </script>
 
     <!-- inicio titulo-->
     <div class="text-center underline text-2xl sm:text-3xl pt-6 sm:pt-8 pb-4 font-serif text-[#47365E]">
