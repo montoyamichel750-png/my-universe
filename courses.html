@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Universe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="fixed inset-0 bg-center bg-cover -z-10" style="background-image: url('/images/fondonormal.png');"></div>
+  <div class="relative min-h-screen">
+
+    <!--inicio nav bar -->
+    <nav class="bg-[#250e28] shadow-lg shadow-[#250e28]/50 px-6 py-8 flex flex-wrap justify-between items-center">
+      <a href="welcome.html" class="font-serif text-[#FEFEFE] text-3xl sm:text-3xl md:text-4xl">Michelle</a>
+      <ul class="flex flex-col sm:flex-row sm:space-x-10 md:space-x-20 text-[#FEFEFE] text-3xl sm:text-xl md:text-3xl font-serif mt-4 sm:mt-0">
+        <li><a href="about_me.html" class="hover:text-violet-300">About me</a></li>
+        <li class="relative group z-50">
+      <!-- inicio menu desplegable -->
+          <a class="hover:text-violet-300 cursor-pointer">Imprint</a>
+          <ul class="absolute hidden group-hover:block bg-[#250e28] w-40 sm:w-48 mt-2 rounded-md text-base sm:text-lg md:text-xl text-[#FEFEFE] font-serif">
+            <li><a href="proyects.html" class="block px-4 py-2 hover:text-violet-300">Proyects</a></li>
+            <li><a href="courses.html" class="block px-4 py-2 hover:text-violet-300">Courses</a></li>
+            <li><a href="volunteer.html" class="block px-4 py-2 hover:text-violet-300">Volunteer</a></li>
+          </ul>
+        </li>
+      <!-- fin menú desplegable -->
+        <li><a href="contacts.html" class="hover:text-violet-300">Contact</a></li>
+      </ul>
+    </nav>
+    <!--fin nav bar -->
+
+    <!-- inicio titulo-->
+    <div class="text-center underline text-2xl sm:text-3xl pt-6 sm:pt-8 pb-4 font-serif text-[#47365E]">
+      <p>Courses</p>
+    </div>
+    <!-- fin titulo-->
+
+    <!-- inicio imagenes-->  
+    <div class="flex flex-col sm:flex-row justify-center gap-8 sm:gap-16 md:gap-32 px-4 sm:px-8">
+      <div class="flex items-center justify-center">
+        <img src="images/ia.png" class="w-full max-w-xs sm:max-w-sm md:max-w-md border-[#C1ADC4] border-2 p-4 sm:p-6">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="images/front.png" class="w-full max-w-xs sm:max-w-sm md:max-w-md border-[#865A8B] border-2 p-4 sm:p-6">
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-8 sm:gap-16 md:gap-32 px-4 sm:px-8 pt-6">
+      <div class="flex items-center justify-center">
+        <img src="images/bronce.jpeg" class="w-full max-w-xs sm:max-w-sm md:max-w-md border-[#865A8B] border-2 p-4 sm:p-6">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="images/telus.png" class="w-full max-w-xs sm:max-w-sm md:max-w-md border-[#C1ADC4] border-2 p-4 sm:p-8">
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-8 sm:gap-16 md:gap-32 px-4 sm:px-8 pt-6">
+      <div class="flex items-center justify-center">
+        <img src="images/creo.jpeg" class="w-full max-w-xs sm:max-w-sm md:max-w-md border-[#C1ADC4] border-2 p-4 sm:p-6">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="images/integral.jpeg" class="w-full max-w-xs sm:max-w-sm md:max-w-md border-[#865A8B] border-2 p-4 sm:p-6">
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-8 sm:gap-16 md:gap-32 px-4 sm:px-8 pt-6">
+      <div class="flex items-center justify-center">
+        <img src="images/excel.jpeg" class="w-full max-w-xs sm:max-w-sm md:max-w-md border-[#865A8B] border-2 p-4 sm:p-6">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="images/masfe.jpeg" class="w-full max-w-xs sm:max-w-sm md:max-w-md border-[#C1ADC4] border-2 p-4 sm:p-6">
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-8 sm:gap-16 md:gap-32 px-4 sm:px-8 pt-6 pb-4">
+      <div class="flex items-center justify-center">
+        <img src="images/certificado javascrpt_page-0001.jpg" class="w-full max-w-xs sm:max-w-sm md:max-w-md border-[#C1ADC4] border-2 p-4 sm:p-6">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="images/excel certificado_page-0001.jpg" class="w-full max-w-xs sm:max-w-sm md:max-w-md border-[#865A8B] border-2 p-4 sm:p-6">
+      </div>
+    </div>
+
+    <!-- fin imagenes-->
+
+
+  </div>  
+</body>
+</html>

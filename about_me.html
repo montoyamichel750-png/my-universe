@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Universe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+</head>
+<body>
+ 
+  <div class="fixed inset-0 bg-center bg-cover -z-10" style="background-image: url('/images/fondonormal.png');"></div>
+  <div class="relative min-h-screen">
+
+    <!--inicio nav bar -->
+    <nav class="bg-[#250e28] shadow-lg shadow-[#250e28]/50 px-6 py-8 flex flex-wrap justify-between items-center">
+      <a href="welcome.html" class="font-serif text-[#FEFEFE] text-3xl sm:text-3xl md:text-4xl">Michelle</a>
+      <ul class="flex flex-col sm:flex-row sm:space-x-10 md:space-x-20 text-[#FEFEFE] text-3xl sm:text-xl md:text-3xl font-serif mt-4 sm:mt-0">
+        <li><a href="about_me.html" class="hover:text-violet-300">About me</a></li>
+        <li class="relative group z-50">
+      <!-- inicio menu desplegable -->
+          <a class="hover:text-violet-300 cursor-pointer">Imprint</a>
+          <ul class="absolute hidden group-hover:block bg-[#250e28] w-40 sm:w-48 mt-2 rounded-md text-base sm:text-lg md:text-xl text-[#FEFEFE] font-serif">
+            <li><a href="proyects.html" class="block px-4 py-2 hover:text-violet-300">Proyects</a></li>
+            <li><a href="courses.html" class="block px-4 py-2 hover:text-violet-300">Courses</a></li>
+            <li><a href="volunteer.html" class="block px-4 py-2 hover:text-violet-300">Volunteer</a></li>
+          </ul>
+        </li>
+      <!-- fin menú desplegable -->
+        <li><a href="contacts.html" class="hover:text-violet-300">Contact</a></li>
+      </ul>
+    </nav>
+    <!--fin nav bar -->
+
+
+    <!-- inicio titulo -->
+    <div class="text-center underline text-2xl sm:text-3xl md:text-4xl pt-6 sm:pt-8 font-serif">
+      <p>About Me</p>
+    </div>
+    <!-- fin titulo -->
+
+    <!-- inicio texto -->
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-16 py-4 rounded-2xl font-serif text-[#47365E] text-base sm:text-lg md:text-xl leading-relaxed">
+      <p>I'm Hazel Michelle Montoya Polio, 
+        I'm 18 years old and I live in Santa Tecla. 
+        I'm currently studying General High School at Centro Escolar Católico Alberto Masferrer, 
+        and I'm also part of the ¡Supérate! Fundación Poma program, 
+        where I'm receiving training in technology, English, and values. 
+        I enjoy participating in educational projects and volunteer work that help me grow as a 
+        person and contribute something positive. Throughout my learning journey, 
+        I've developed skills such as work planning, writing, leadership, mathematical reasoning, 
+        teamwork, responsibility, spatial reasoning, organization, and knowledge of JavaScript and HTML.</p> <br>
+
+      <p>Learning, to me, is not just about completing tasks — it's about discovering, connecting,
+        and transforming. I'm inspired by the details others overlook, by ideas that are felt before 
+        they're understood, and by spaces where the human blends with the academic. I enjoy observing, 
+        writing, creating, and sharing from a place that feels true to who I am. Every project is a 
+        chance to leave something of myself behind, something that speaks with clarity and soul. 
+        I don't want to be noise, I want to be echo: something that stays, something that touches.</p>
+    </div>
+    <!-- fin texto -->
+
+    <!-- inicio carrusel -->
+    <div class="max-w-[960px] mx-auto pt-10 pb-10"> 
+      <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+        <swiper-slide class="bg-center bg-cover w-[200px] sm:w-[250px] md:w-[300px] h-[200px] sm:h-[250px] md:h-[300px]">
+          <img src="images/amarillo.JPG" alt="amarillo" class="w-full h-full object-cover"/>
+        </swiper-slide>
+        <swiper-slide class="bg-center bg-cover w-[200px] sm:w-[250px] md:w-[300px] h-[200px] sm:h-[250px] md:h-[300px]">
+          <img src="images/blanco.jpg" alt="blanco" class="w-full h-full object-cover"/>
+        </swiper-slide>
+        <swiper-slide class="bg-center bg-cover w-[200px] sm:w-[250px] md:w-[300px] h-[200px] sm:h-[250px] md:h-[300px]">
+          <img src="images/negro.jpeg" alt="negro" class="w-full h-full object-cover"/>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+    <!--fin carrusel-->
+
+
+  </div>   
+</body>
+</html>

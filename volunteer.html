@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Universe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="fixed inset-0 bg-center bg-cover -z-10" style="background-image: url('/images/fondonormal.png');"></div>
+  <div class="relative min-h-screen">
+   
+    <!--inicio nav bar -->
+    <nav class="bg-[#250e28] shadow-lg shadow-[#250e28]/50 px-6 py-8 flex flex-wrap justify-between items-center">
+      <a href="welcome.html" class="font-serif text-[#FEFEFE] text-3xl sm:text-3xl md:text-4xl">Michelle</a>
+      <ul class="flex flex-col sm:flex-row sm:space-x-10 md:space-x-20 text-[#FEFEFE] text-3xl sm:text-xl md:text-3xl font-serif mt-4 sm:mt-0">
+        <li><a href="about_me.html" class="hover:text-violet-300">About me</a></li>
+        <li class="relative group z-50">
+      <!-- inicio menu desplegable -->
+          <a class="hover:text-violet-300 cursor-pointer">Imprint</a>
+          <ul class="absolute hidden group-hover:block bg-[#250e28] w-40 sm:w-48 mt-2 rounded-md text-base sm:text-lg md:text-xl text-[#FEFEFE] font-serif">
+            <li><a href="proyects.html" class="block px-4 py-2 hover:text-violet-300">Proyects</a></li>
+            <li><a href="courses.html" class="block px-4 py-2 hover:text-violet-300">Courses</a></li>
+            <li><a href="volunteer.html" class="block px-4 py-2 hover:text-violet-300">Volunteer</a></li>
+          </ul>
+        </li>
+      <!-- fin menú desplegable -->
+        <li><a href="contacts.html" class="hover:text-violet-300">Contact</a></li>
+      </ul>
+    </nav>
+    <!--fin nav bar -->
+  
+    <!-- inicio titulo-->
+    <div class="text-center text-3xl pt-8 pb-14 font-serif underline">
+      <p>Volunteer</p>
+    </div>
+    <!-- fin titulo-->
+     
+    <div class="space-y-24 px-6">
+      <!-- inicio techo-->
+      <div class="flex flex-col sm:flex-row gap-6 items-start">
+        <div>
+          <img src="images/techo2.JPG" class="w-64 h-auto mx-auto sm:mx-0">
+        </div>
+        <div class="sm:mt-64">
+          <img src="images/techo1.jpg" class="w-64 h-auto mx-auto sm:mx-0">
+        </div>
+        <!-- inicio texto -->
+        <div class="max-w-[500px] mx-auto px-8 py-12 sm:py-32 rounded-2xl font-serif text-[#47365E]">
+          <p class="text-2xl">TECHO</p> <br>
+          <p class="text-2xl">Puesta de pilotes</p> <br>
+          <p>
+            During this volunteer experience, I participated in placing piles, 
+            which are the fundamental basis for building emergency housing. 
+            Throughout the day, we worked as a team measuring the land, checking 
+            the water level, digging to locate the piles, placing them in position, 
+            and filling them with earth to ensure they were firm and stable.
+          </p>
+        </div>
+        <!-- fin texto-->
+      </div>
+      <!-- fin techo-->
+
+      <!-- inicio arbol-->
+      <div class="flex flex-col sm:flex-row gap-6 items-start">
+        <!-- inicio texto -->
+        <div class="max-w-[500px] mx-auto px-8 py-12 sm:py-16 rounded-2xl font-serif text-[#47365E]">
+          <p class="text-2xl">Fundación Tierra and UNO</p> <br>
+          <p class="text-2xl">Planta un árbol</p> <br>
+          <p>
+            I took part in the ‘Plant a Tree with UNO’ activity organised by the 
+            Fundación Tierra, which involved delivering trees to different service 
+            stations. During the day, we helped to distribute the plants. This experience 
+            allowed me to contribute directly to raising awareness about environmental care 
+            and promoting a more sustainable culture in our country.
+          </p>
+        </div>
+        <!-- fin texto-->
+        <div>
+          <img src="images/planta2.jpg" class="w-64 h-auto mx-auto sm:mx-0">
+        </div>
+        <div class="sm:mt-24">
+          <img src="images/planta1.jpg" class="w-64 h-auto mx-auto sm:mx-0">
+        </div>
+      </div>
+      <!-- fin arbol-->
+    </div>
+
+    <br>
+  </div>  
+</body>
+</html>

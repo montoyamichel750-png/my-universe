@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Universe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module">
+    import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js';
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+  <body>
+  <div class="fixed inset-0 bg-center bg-cover -z-10" style="background-image: url('/images/fondonormal.png');"></div>
+  <div class="relative min-h-screen">
+    
+    <!--inicio nav bar -->
+    <nav class="bg-[#250e28] shadow-lg shadow-[#250e28]/50 px-6 py-8 flex flex-wrap justify-between items-center">
+      <a href="welcome.html" class="font-serif text-[#FEFEFE] text-3xl sm:text-3xl md:text-4xl">Michelle</a>
+      <ul class="flex flex-col sm:flex-row sm:space-x-10 md:space-x-20 text-[#FEFEFE] text-3xl sm:text-xl md:text-3xl font-serif mt-4 sm:mt-0">
+        <li><a href="about_me.html" class="hover:text-violet-300">About me</a></li>
+        <li class="relative group z-50">
+      <!-- inicio menu desplegable -->
+          <a class="hover:text-violet-300 cursor-pointer">Imprint</a>
+          <ul class="absolute hidden group-hover:block bg-[#250e28] w-40 sm:w-48 mt-2 rounded-md text-base sm:text-lg md:text-xl text-[#FEFEFE] font-serif">
+            <li><a href="proyects.html" class="block px-4 py-2 hover:text-violet-300">Proyects</a></li>
+            <li><a href="courses.html" class="block px-4 py-2 hover:text-violet-300">Courses</a></li>
+            <li><a href="volunteer.html" class="block px-4 py-2 hover:text-violet-300">Volunteer</a></li>
+          </ul>
+        </li>
+      <!-- fin menú desplegable -->
+        <li><a href="contacts.html" class="hover:text-violet-300">Contact</a></li>
+      </ul>
+    </nav>
+    <!--fin nav bar -->
+  
+    <!-- inicio titulo-->
+      <div class="text-center text-base sm:text-xl md:text-2xl pt-6 sm:pt-8 font-serif text-[#47365E] px-4">
+        <p>Over the last three years, I have had the opportunity to participate in three projects. <br>
+          Below, I will tell you more about them.</p>
+      </div>
+    <!-- fin titulo-->
+
+    <!-- inicio flecha-->
+      <div class="flex items-center justify-center pt-8">
+        <svg class="h-32 sm:h-64 w-5 text-purple-400" viewBox="0 0 10 100" fill="none" stroke="currentColor">
+          <line x1="5" y1="0" x2="5" y2="90" stroke-width="2" />
+          <polyline points="0,90 5,100 10,90" stroke-width="2" fill="none" />
+        </svg>
+      </div>
+    <!-- fin flecha-->
+
+    <!---inicio hackaton-->
+      <div class="text-center pt-16 sm:pt-24 pb-4">
+        <p class="text-center text-2xl sm:text-3xl pt-4 sm:pt-8 font-serif text-[#3D1F41]">Hackaton</p>
+      </div>
+    <!-- inicio carrusel-->
+      <div class="max-w-[500px] mx-auto px-6 sm:px-8 py-6 sm:py-10 rounded-2xl font-serif text-[#47365E]">
+      <img src="images/hackaton.png" class="w-full h-auto object-cover rounded-md"/>
+      </div>
+    <!-- fin carrusel-->
+    
+    <!-- inicio texto-->
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-30 py-6 sm:py-10 rounded-2xl text-base sm:text-lg md:text-xl font-serif text-[#47365E] leading-relaxed">
+        <p>In this project, I had the opportunity to be a group leader. 
+          This first project was an introduction to technology, especially PowerApps, where the 
+          application was developed. Specifically, my application was a directory that would contain 
+          information about different tourist destinations in the country, where users could also calculate 
+          the budget for travelling to a certain place they chose. It would also have an integrated chatbot 
+          that would help users with any information they needed. I also had the opportunity to be in charge
+          of the interactivity of the page so that everything would work.
+        </p>
+      </div>
+    <!-- fin texto-->
+    <!--fin hackaton-->
+
+
+    
+    <!-- inicio expo-->
+      <div class="text-center pt-8 pb-4">
+        <p class="text-center text-2xl sm:text-3xl pt-4 sm:pt-8 font-serif text-[#3D1F41]">Expo de logros</p>
+      </div>
+    <!-- inicio carrusel-->
+        <div class="mx-auto pt-6 sm:pt-10 pb-6 sm:pb-10 rounded-2xl">
+          <swiper-container class="mySwiper" init="true" autoplay-delay="2500" pagination="true" slides-per-view="1" space-between="30" centered-slides="true">
+            <swiper-slide>
+              <img src="images/logoeventi.png" class="w-full max-w-[500px] h-auto object-cover mx-auto rounded-md" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="images/us.JPG" class="w-full max-w-[300px] h-auto object-cover mx-auto rounded-md"/>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="images/eventicodigo.png" class="w-full max-w-[700px] h-auto object-cover mx-auto rounded-md"/>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+    <!-- fin carrusel-->
+
+    <!-- inicio texto-->
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-30 py-6 rounded-2xl text-base sm:text-lg md:text-xl font-serif text-[#47365E] leading-relaxed">
+          <p>This was the second of the projects in which I had the opportunity to participate. 
+            Specifically, I was in the programming area, sometimes in back-end and sometimes in front-end.
+            Here we developed a website from scratch. Our theme was events, and we were facilitators so 
+            that people offering their services for parties or events could do so from our website, allowing 
+            customers to search for them and buy their services. We also had extra tools, such as templates 
+            for events, quotes, and mixed reality to view your event in real time. I learned a lot from this
+            project, but what stands out most is the teamwork.
+          </p>
+        </div>
+    <!-- fin texto-->
+    <!-- fin expo-->
+
+
+
+     <!-- inicio expotech-->
+      <div class="text-center pt-8 pb-4">
+        <p class="text-center text-2xl sm:text-3xl pt-4 sm:pt-8 font-serif text-[#3D1F41]">Expotech</p>
+      </div>
+    <!-- inicio carrusel-->
+        <div class="mx-auto pt-6 sm:pt-10 pb-6 sm:pb-10 rounded-2xl">
+          <swiper-container class="mySwiper" init="true" pagination="true" autoplay-delay="2500" slides-per-view="1" space-between="30" centered-slides="true">
+            <swiper-slide>
+              <img src="images/carro.jpg" class="w-full max-w-[500px] h-auto object-cover mx-auto rounded-md" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="images/logo.png" class="w-full max-w-[500px] h-auto object-cover mx-auto rounded-md"/>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="images/matecodigo.png" class="w-full max-w-[700px] h-auto object-cover mx-auto rounded-md"/>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+    <!-- fin carrusel-->
+
+      <!-- inicio texto-->
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-30 py-6 rounded-2xl text-base sm:text-lg md:text-xl font-serif text-[#47365E] leading-relaxed">
+          <p>This is the latest project I participated in recently. 
+            Here, as in the previous project, we developed a website,
+            but this one was more business plan-oriented. The website
+            was about car maintenance, connecting mechanics with drivers. 
+            In addition, the website offered various tools such as a map 
+            of nearby mechanics, help with car maintenance reminders, and 
+            appointments with mechanics. Here, I worked in the front-end area.
+          </p>
+        </div>
+      <!-- fin texto-->
+    <!-- fin expotech-->
+
+  
+  </div>  
+  </body>
+</html>
